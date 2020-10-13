@@ -4,7 +4,7 @@ Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
 
-Closure is the variables that were in scope when a function was created. 
+Everytime a function is created, a closure is created. The closure contains all the variables that were in scope when the function was declared. This alows an inner function to use variables from outer scopes.
 
 2. Study the following code, then answer the questions below.
 
@@ -28,12 +28,12 @@ dansRoll();
 
 a. Where is closure used in this code? How can you tell?
 
-    Closure is used when personalDice is assigned with an argument to a variable. You can tell because the name is remembered each time.
-
+    Closure is used in this function because it is reaching into the outer function's scope to get the value of the variable "name".
+    
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
 
     Dan's name will always be the same in the sentence. What will change is the value of the roll.
 
 c. What is the lexical scope of `newRoll`? 
 
-    It is local scoped to its current block.
+    It is local scoped to its current block, it does not need to reach to an outer-scope.
